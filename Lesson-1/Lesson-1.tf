@@ -7,7 +7,7 @@ data "aws_ssm_parameter" "linuxAmi" {
 }
 
 resource "aws_instance" "my_Ubuntu" {
-
+  count         = 3
   ami           = data.aws_ssm_parameter.linuxAmi.value
   instance_type = "t2.micro"
 
