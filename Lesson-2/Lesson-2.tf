@@ -15,7 +15,7 @@ resource "aws_instance" "my_webserver" {
     l_name = "Yarmolenko"
     names  = ["Vasya", "Kolya", "Petya"]
   })
-
+  
   tags = {
     Name = "My webserver"
   }
