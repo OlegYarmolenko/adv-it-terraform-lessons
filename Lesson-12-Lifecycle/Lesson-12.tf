@@ -51,17 +51,6 @@ resource "aws_security_group" "my_webserver" {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 output "Webserver-Public-IP" {
   value = aws_instance.my_webserver.public_ip
 }
