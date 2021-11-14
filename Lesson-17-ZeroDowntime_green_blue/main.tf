@@ -108,7 +108,7 @@ resource "aws_default_subnet" "default_az2" {
   availability_zone = "us-east-1b"
 }
 output "web_loadbalancer" {
-  value = aws_elb.web.name
+  value = aws_elb.web.dns_name
 }
 output "aws_availability_zones" {
   value = data.aws_availability_zones.available.names
