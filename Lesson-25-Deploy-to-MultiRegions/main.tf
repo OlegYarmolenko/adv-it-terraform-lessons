@@ -70,6 +70,7 @@ resource "aws_instance" "my_default_server" {
   tags = {
     Name = "Default Server"
   }
+
 }
 
 resource "aws_instance" "my_usa_server" {
